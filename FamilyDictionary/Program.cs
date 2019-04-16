@@ -11,7 +11,7 @@ namespace FamilyDictionary
                 new Dictionary<string, Dictionary<string, string>>();
 
             myFamily.Add("wife", new Dictionary<string, string>() {
-                { "name", "Stacye" }, { "age", "51" } });
+                { "name", "Stacye" }, { "age", "54" } });
 
             myFamily.Add("son", new Dictionary<string, string>() {
                 { "name", "Nazz" }, { "age", "15" } });
@@ -25,13 +25,13 @@ namespace FamilyDictionary
             myFamily.Add("sister", new Dictionary<string, string>() {
                 { "name", "Krista" }, { "age", "46" } });
 
-            foreach (var member in myFamily)
-            {
-                foreach(var set in member.Value)
-                {
-                    Console.WriteLine($"{set.Value} is my {member.Key} and is {set.Value} years old.");
-                }
-            }
+            //foreach (var member in myFamily)
+            //{
+            //    foreach (var set in member.Value)
+            //    {
+            //        Console.WriteLine($"{set.Value} is my {member.Key} and is {set.Value} years old.");
+            //    }
+            //}
 
             foreach (var (key, value) in myFamily)
             {
